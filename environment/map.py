@@ -5,8 +5,8 @@ text_map = [
 	"W...W......W",
 	"W...W......W",
 	"W..........W",
-	"W...WWWW.WWW",
-	"W...W......W",
+	"W..........W",
+	"W...WWW..WWW",
 	"W...W......W",
 	"WWWWWWWWWWWW",
 ]

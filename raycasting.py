@@ -23,6 +23,13 @@ def cast_rays_sector(surface, position, angle, rays_count):
 			target_tile = (x // TILE_SIZE * TILE_SIZE, y // TILE_SIZE * TILE_SIZE)
 
 			if target_tile in world_map:
+
+				projection_height = PROJECTION_COEF / depth
+
+				pygame.draw.rect(surface, WHITE,
+					(ray * PROJECTION_SCALE, HALF_SCREEN_HEIGHT - projection_height // 2, PROJECTION_SCALE, projection_height)
+				)
+
 				break
 
 		current_angle += DELTA_ANGLE

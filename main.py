@@ -9,7 +9,7 @@ from raycasting import *
 # 5 : 30
 
 pygame.init()
-surface = pygame.display.set_mode((WIDTH, HEIGHT))
+surface = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
 
 player = Player()
@@ -29,8 +29,8 @@ while True:
 	cast_rays_sector(surface, player.position, player.angle, NUMBER_OF_RAYS)
 
 	player_ray = (
-		player.x + WIDTH * math.cos(player.angle),
-		player.y + WIDTH * math.sin(player.angle)
+		player.x + SCREEN_WIDTH * math.cos(player.angle),
+		player.y + SCREEN_WIDTH * math.sin(player.angle)
 	)
 
 	pygame.draw.line(surface, GREEN, player.position, player_ray)
