@@ -32,4 +32,4 @@ def cast_rays_sector(surface, position, angle, rays_count):
 
 				break
 
-		current_angle += DELTA_ANGLE
+		current_angle += RAYS_DELTA_ANGLE

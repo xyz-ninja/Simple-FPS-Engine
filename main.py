@@ -6,8 +6,6 @@ from player import Player
 from environment.map import world_map
 from raycasting import *
 
-# 5 : 30
-
 pygame.init()
 surface = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()

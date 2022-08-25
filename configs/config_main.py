@@ -15,14 +15,14 @@ TILE_SIZE = 100
 FOV = math.pi / 3 # in radians, simply 60 degrees
 HALF_FOV = FOV / 2
 NUMBER_OF_RAYS = 120
+RAYS_DELTA_ANGLE = FOV / NUMBER_OF_RAYS
 MAX_DEPTH = 800 # max view distance
-DELTA_ANGLE = FOV / NUMBER_OF_RAYS
 
 PROJECTION_DISTANCE = NUMBER_OF_RAYS / (2 * math.tan(HALF_FOV))
 PROJECTION_COEF = PROJECTION_DISTANCE * TILE_SIZE
 PROJECTION_SCALE = SCREEN_WIDTH // NUMBER_OF_RAYS
 
-# player
+# temp player
 player_position = (HALF_SCREEN_WIDTH, HALF_SCREEN_HEIGHT)
 player_angle = 0
 player_speed = 2
