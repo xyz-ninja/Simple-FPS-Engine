@@ -2,12 +2,12 @@ from configs.config_main import *
 
 text_map = [
 	"WWWWWWWWWWWW",
+	"W...W......W",
+	"W...W......W",
 	"W..........W",
-	"W..........W",
-	"W..........W",
-	"W..........W",
-	"W..........W",
-	"W..........W",
+	"W...WWWW.WWW",
+	"W...W......W",
+	"W...W......W",
 	"WWWWWWWWWWWW",
 ]
 

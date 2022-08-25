@@ -4,6 +4,7 @@ from configs.config_main import *
 from colors import *
 from player import Player
 from environment.map import world_map
+from raycasting import *
 
 # 5 : 30
 
@@ -23,7 +24,9 @@ while True:
 	surface.fill(BLACK)
 	
 	# DRAW PLAYER
-	pygame.draw.circle(surface, GREEN, player.position, 12)
+	pygame.draw.circle(surface, GREEN, (int(player.x), int(player.y)), 12)
+
+	cast_rays_sector(surface, player.position, player.angle, NUMBER_OF_RAYS)
 
 	player_ray = (
 		player.x + WIDTH * math.cos(player.angle),
