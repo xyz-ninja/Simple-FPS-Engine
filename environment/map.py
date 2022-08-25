@@ -1,14 +1,14 @@
 from configs.config_main import *
 
 text_map = [
-	"WWWWWWWWWWWWWW",
-	"W............W",
-	"W............W",
-	"W............W",
-	"W............W",
-	"W............W",
-	"W............W",
-	"WWWWWWWWWWWWWW",
+	"WWWWWWWWWWWW",
+	"W..........W",
+	"W..........W",
+	"W..........W",
+	"W..........W",
+	"W..........W",
+	"W..........W",
+	"WWWWWWWWWWWW",
 ]
 
 world_map = set()

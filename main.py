@@ -34,7 +34,7 @@ while True:
 
 	# DRAW MAP
 	for x, y in world_map:
-		pygame.draw.rect(surface, DARKGRAY, (x, y, TILE_SIZE, TILE_SIZE))
+		pygame.draw.rect(surface, DARKGRAY, (x, y, TILE_SIZE, TILE_SIZE), 2)
 
 	pygame.display.flip() # update display image
 	clock.tick(TARGET_FPS)
